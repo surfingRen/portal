@@ -7,11 +7,9 @@
 	<name>portal</name>
 	<packaging>pom</packaging>
 	<version>1.0-SNAPSHOT</version>
-	<properties>
-		<failOnMissingWebXml>false</failOnMissingWebXml>
-	</properties>
 	<modules>
 		<module>portal-api</module>
 		<module>portal-doc</module>
+		<module>portal-web</module>
 	</modules>
 </project>
