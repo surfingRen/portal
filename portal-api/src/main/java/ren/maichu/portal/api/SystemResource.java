@@ -26,7 +26,7 @@ import io.swagger.annotations.ApiResponses;
 import ren.maichu.portal.model.ReturnVO;
 
 /**
- * APISTORE相关REST服务
+ * System 相关REST服务
  */
 @Service
 @Path("/system")
