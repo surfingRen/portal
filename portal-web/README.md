@@ -10,4 +10,4 @@
 	cordova run osx
 	cordova run ios
 	
-![osx app preview](portal/portal-web/WebContent/E293518E-4218-47B6-BCA1-CBD218E577E8.png "oxs app") 
+![osx app preview](WebContent/E293518E-4218-47B6-BCA1-CBD218E577E8.png "oxs app") 
