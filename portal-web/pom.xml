@@ -23,4 +23,7 @@
 	<build>
 		<finalName>portal-web</finalName>
 	</build>
+	<properties>
+		<failOnMissingWebXml>false</failOnMissingWebXml>
+	</properties>
 </project>
