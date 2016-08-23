@@ -23,10 +23,10 @@
 	<!-- db -->
 	<bean id="dataSourceTarget"
 		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
-		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
-		<property name="url" value="jdbc:oracle:thin:@10.211.55.3:1521:XE" />
-		<property name="username" value="mpp" />
-		<property name="password" value="mpp" />
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://120.24.87.6:3306/portal" />
+		<property name="username" value="portal" />
+		<property name="password" value="Passw0rd" />
 	</bean>
 
 	<bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">

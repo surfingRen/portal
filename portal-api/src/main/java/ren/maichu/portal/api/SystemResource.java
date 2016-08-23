@@ -61,6 +61,18 @@ public class SystemResource {
 		ReturnVO returnReturnVO = new ReturnVO(ReturnVO.CODE_SUCCESS, ReturnVO.MSG_SUCCESS, content);
 		return returnReturnVO;
 	}
+	
+	@Path("/dbinfo")
+	@GET
+	@Produces(MediaType.APPLICATION_JSON)
+	@ApiOperation(value = "获取dbinfo", notes = "获取数据库信息")
+	@ApiResponses(value = { @ApiResponse(code = 200, message = "ok", response = ReturnVO.class) })
+	public ReturnVO dbinfo(@Context HttpServletRequest request) {
+		HashMap<String, Object> content = new HashMap<String, Object>();
+		content.put("dbinfo", template.queryForList("select 'http://www.cnblogs.com/zeroone/archive/2010/05/05/1727659.html' as reference,now(),DAYOFWEEK('1998-02-03'),WEEKDAY('1997-10-04 22:23:00'),WEEKDAY('1997-11-05'),FROM_DAYS(729669),CURTIME(),SYSDATE(),CURRENT_TIMESTAMP(),DATE_FORMAT(CURRENT_TIMESTAMP(),'%H %k %I %r %T %S %w');"));
+		ReturnVO returnReturnVO = new ReturnVO(ReturnVO.CODE_SUCCESS, ReturnVO.MSG_SUCCESS, content);
+		return returnReturnVO;
+	}
 
 	private String getIpAddr(HttpServletRequest request) {
 		String ipAddress = null;
