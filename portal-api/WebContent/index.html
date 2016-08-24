@@ -29,6 +29,7 @@
   <script src='bathpath.js' type='text/javascript'></script>
 
   <script type="text/javascript">
+  
     $(function () {
       var url = window.location.search.match(/url=([^&]+)/);
       if (url && url.length > 1) {
@@ -65,7 +66,7 @@
             hljs.highlightBlock(e)
           });
 
-          addApiKeyAuthorization();
+//           addApiKeyAuthorization();
         },
         onFailure: function(data) {
           log("Unable to Load SwaggerUI");
@@ -75,16 +76,16 @@
         showRequestHeaders: false
       });
 
-      function addApiKeyAuthorization(){
-        var key = encodeURIComponent($('#input_apiKey')[0].value);
-        if(key && key.trim() != "") {
-            var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
-            window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth);
-            log("added key " + key);
-        }
-      }
+//       function addApiKeyAuthorization(){
+//         var key = encodeURIComponent($('#input_apiKey')[0].value);
+//         if(key && key.trim() != "") {
+//             var apiKeyAuth = new SwaggerClient.ApiKeyAuthorization("api_key", key, "query");
+//             window.swaggerUi.api.clientAuthorizations.add("api_key", apiKeyAuth);
+//             log("added key " + key);
+//         }
+//       }
 
-      $('#input_apiKey').change(addApiKeyAuthorization);
+//       $('#input_apiKey').change(addApiKeyAuthorization);
 
       // if you have an apiKey you would like to pre-populate on the page for demonstration purposes...
       /*
@@ -120,6 +121,8 @@
 <a href="https://almsaeedstudio.com/themes/AdminLTE/pages/calendar.html">admintle-calendar</a>
 |
 <a href="http://naotu.baidu.com">naotu</a>
+|
+<a href="login.jsp">chat</a>
 </div>
 <div id="message-bar" class="swagger-ui-wrap" data-sw-translate>&nbsp;</div>
 <div id="swagger-ui-container" class="swagger-ui-wrap"></div>
