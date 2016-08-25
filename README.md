@@ -15,3 +15,5 @@
 
 	1.安装 api
 	2.
+	
+[微信架构-重点看日志](http://www.infoq.com/cn/articles/the-road-of-the-growth-weixin-background " wechat") 
