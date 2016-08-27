@@ -74,7 +74,7 @@
 		<property name="filterChainDefinitions">
 			<value>
 				/api/swagger.json = anon
-				/api/system/** = anon
+				/api/** = anon
 				# admin role
 				/api/user/** = authc, roles["admin"]
 				# everything else requires authentication:

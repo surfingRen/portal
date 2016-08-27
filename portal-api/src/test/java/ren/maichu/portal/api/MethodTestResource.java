@@ -3,6 +3,7 @@ package ren.maichu.portal.api;
 import java.util.HashMap;
 import java.util.Map;
 
+import javax.ws.rs.BeanParam;
 import javax.ws.rs.DELETE;
 import javax.ws.rs.FormParam;
 import javax.ws.rs.GET;
